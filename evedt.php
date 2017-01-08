@@ -33,13 +33,11 @@ echo $args['before_title'] . $title . $args['after_title'];
 // This is where you run the code and display the output
 echo __( 'Hello, World!', 'ch_n1b_evedt' );
 ?>
-
-Blibediblabedi
 <div>
+	<img class="evedt-donator-avatar" style="width: 100%;"></div>
 	<span class="evedt-donator-name"></span>
 	<span class="evedt-donator-amount"></span>
 </div>
-
 <script>
 jQuery(function(){
 	var $ = jQuery;
@@ -49,6 +47,12 @@ jQuery(function(){
 		success: function(donations){
 			$('.evedt-donator-name').text(donations[0].characterName);
 			$('.evedt-donator-amount').text(donations[0].amount);
+
+
+			var id = donations[0].characterId;
+			var avatarUrl = 'https://image.eveonline.com/Character/' + characterId + '_256.jpg';
+
+			$('.evedt-donator-avatar').attr('src', avatarUrl);
 		}
 	})
 })
