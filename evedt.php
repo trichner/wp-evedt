@@ -46,9 +46,7 @@ jQuery(function(){
 	console.log("EVEDT FTW!");
 	$.ajax({
 		url: '/api/donations',
-		success: function(response){
-			console.log("Resp:" + response.data)
-			var donations = response.data;
+		success: function(donations){
 			$('.evedt-donator-name').text(donations[0].characterName);
 			$('.evedt-donator-amount').text(donations[0].amount);
 		}
