@@ -30,8 +30,7 @@ echo $args['before_widget'];
 if ( ! empty( $title ) )
 echo $args['before_title'] . $title . $args['after_title'];
 
-// This is where you run the code and display the output
-echo __( 'Hello, World!', 'ch_n1b_evedt' );
+// Here follows the widget content
 ?>
 <div>
 	<img class="evedt-donator-avatar" style="width: 100%;"></div>
@@ -49,7 +48,7 @@ jQuery(function(){
 			$('.evedt-donator-amount').text(donations[0].amount);
 
 
-			var id = donations[0].characterId;
+			var characterId = donations[0].characterId;
 			var avatarUrl = 'https://image.eveonline.com/Character/' + characterId + '_256.jpg';
 
 			$('.evedt-donator-avatar').attr('src', avatarUrl);
