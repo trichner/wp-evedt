@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Site Plugin for example.com
-Description: Site specific code changes for example.com
+Plugin Name: Eve Donation Tracker Plugin
+Description: Adds Widget for evedt
 */
 /* Start Adding Functions Below this Line */
 
