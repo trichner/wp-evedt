@@ -17,8 +17,8 @@ upstream php {
 server {
         listen 80 default_server;
 
-        server_name k42.ch localhost;
-        root /home/ubuntu/wordpress;
+        server_name example.org localhost;
+        root /var/www/wordpress;
 
         index index.php;
 
